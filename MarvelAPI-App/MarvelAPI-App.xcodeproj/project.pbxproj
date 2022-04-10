@@ -16,6 +16,13 @@
 		B4B784E027F7325F00D28ACF /* MarvelAPI_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B784DF27F7325F00D28ACF /* MarvelAPI_AppTests.swift */; };
 		B4B784EA27F7325F00D28ACF /* MarvelAPI_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B784E927F7325F00D28ACF /* MarvelAPI_AppUITests.swift */; };
 		B4B784EC27F7325F00D28ACF /* MarvelAPI_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B784EB27F7325F00D28ACF /* MarvelAPI_AppUITestsLaunchTests.swift */; };
+		B4CD94FD27FA6AC800240D8C /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD94FC27FA6AC800240D8C /* Marvel.swift */; };
+		B4CD950127FA769C00240D8C /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD950027FA769C00240D8C /* CombineMoya */; };
+		B4CD950327FA769C00240D8C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD950227FA769C00240D8C /* Moya */; };
+		B4CD950527FA769C00240D8C /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD950427FA769C00240D8C /* ReactiveMoya */; };
+		B4CD950727FA769C00240D8C /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD950627FA769C00240D8C /* RxMoya */; };
+		B4CD950A27FA8E8A00240D8C /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD950927FA8E8A00240D8C /* CryptoSwift */; };
+		B4CD950C27FB15B400240D8C /* MarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD950B27FB15B400240D8C /* MarvelModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,8 @@
 		B4B784E527F7325F00D28ACF /* MarvelAPI-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MarvelAPI-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B784E927F7325F00D28ACF /* MarvelAPI_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI_AppUITests.swift; sourceTree = "<group>"; };
 		B4B784EB27F7325F00D28ACF /* MarvelAPI_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4CD94FC27FA6AC800240D8C /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
+		B4CD950B27FB15B400240D8C /* MarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CD950327FA769C00240D8C /* Moya in Frameworks */,
+				B4CD950127FA769C00240D8C /* CombineMoya in Frameworks */,
+				B4CD950727FA769C00240D8C /* RxMoya in Frameworks */,
+				B4CD950A27FA8E8A00240D8C /* CryptoSwift in Frameworks */,
+				B4CD950527FA769C00240D8C /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +120,8 @@
 				B4B784D127F7325F00D28ACF /* Assets.xcassets */,
 				B4B784D327F7325F00D28ACF /* LaunchScreen.storyboard */,
 				B4B784D627F7325F00D28ACF /* Info.plist */,
+				B4CD94FC27FA6AC800240D8C /* Marvel.swift */,
+				B4CD950B27FB15B400240D8C /* MarvelModel.swift */,
 			);
 			path = "MarvelAPI-App";
 			sourceTree = "<group>";
@@ -143,6 +159,13 @@
 			dependencies = (
 			);
 			name = "MarvelAPI-App";
+			packageProductDependencies = (
+				B4CD950027FA769C00240D8C /* CombineMoya */,
+				B4CD950227FA769C00240D8C /* Moya */,
+				B4CD950427FA769C00240D8C /* ReactiveMoya */,
+				B4CD950627FA769C00240D8C /* RxMoya */,
+				B4CD950927FA8E8A00240D8C /* CryptoSwift */,
+			);
 			productName = "MarvelAPI-App";
 			productReference = B4B784C527F7325C00D28ACF /* MarvelAPI-App.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,10 @@
 				Base,
 			);
 			mainGroup = B4B784BC27F7325B00D28ACF;
+			packageReferences = (
+				B4CD94FF27FA769C00240D8C /* XCRemoteSwiftPackageReference "Moya" */,
+				B4CD950827FA8E8A00240D8C /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = B4B784C627F7325C00D28ACF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +287,9 @@
 			files = (
 				B4B784CD27F7325C00D28ACF /* ViewController.swift in Sources */,
 				B4B784C927F7325C00D28ACF /* AppDelegate.swift in Sources */,
+				B4CD94FD27FA6AC800240D8C /* Marvel.swift in Sources */,
 				B4B784CB27F7325C00D28ACF /* SceneDelegate.swift in Sources */,
+				B4CD950C27FB15B400240D8C /* MarvelModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +627,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4CD94FF27FA769C00240D8C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B4CD950827FA8E8A00240D8C /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4CD950027FA769C00240D8C /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD94FF27FA769C00240D8C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		B4CD950227FA769C00240D8C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD94FF27FA769C00240D8C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		B4CD950427FA769C00240D8C /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD94FF27FA769C00240D8C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		B4CD950627FA769C00240D8C /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD94FF27FA769C00240D8C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		B4CD950927FA8E8A00240D8C /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD950827FA8E8A00240D8C /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4B784BD27F7325C00D28ACF /* Project object */;
 }
