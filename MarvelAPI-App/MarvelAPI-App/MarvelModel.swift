@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import SwiftUI
 
-struct marvelModel:Codable{
+struct MarvelModel:Codable{
     var data:_Data?
 }
 
@@ -31,7 +30,6 @@ struct Urls :Codable{
     private let url:String
     
     var _url: URL? { URL.init(string: url) }
-    
     
     enum CodingKeys: String, CodingKey {
             case type
