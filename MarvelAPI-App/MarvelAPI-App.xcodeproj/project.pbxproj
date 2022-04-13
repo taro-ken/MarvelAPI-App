@@ -23,6 +23,10 @@
 		B4CD950727FA769C00240D8C /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD950627FA769C00240D8C /* RxMoya */; };
 		B4CD950A27FA8E8A00240D8C /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD950927FA8E8A00240D8C /* CryptoSwift */; };
 		B4CD950C27FB15B400240D8C /* MarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD950B27FB15B400240D8C /* MarvelModel.swift */; };
+		B4CD950E280284D400240D8C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD950D280284D400240D8C /* TableViewCell.swift */; };
+		B4CD9510280284EB00240D8C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4CD950F280284EB00240D8C /* TableViewCell.xib */; };
+		B4CD951228028FE600240D8C /* ex-UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD951128028FE600240D8C /* ex-UIImage.swift */; };
+		B4CD95152802F18000240D8C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD95142802F18000240D8C /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,9 @@
 		B4B784EB27F7325F00D28ACF /* MarvelAPI_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B4CD94FC27FA6AC800240D8C /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
 		B4CD950B27FB15B400240D8C /* MarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModel.swift; sourceTree = "<group>"; };
+		B4CD950D280284D400240D8C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B4CD950F280284EB00240D8C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		B4CD951128028FE600240D8C /* ex-UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ex-UIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 				B4CD950727FA769C00240D8C /* RxMoya in Frameworks */,
 				B4CD950A27FA8E8A00240D8C /* CryptoSwift in Frameworks */,
 				B4CD950527FA769C00240D8C /* ReactiveMoya in Frameworks */,
+				B4CD95152802F18000240D8C /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +130,9 @@
 				B4B784D627F7325F00D28ACF /* Info.plist */,
 				B4CD94FC27FA6AC800240D8C /* Marvel.swift */,
 				B4CD950B27FB15B400240D8C /* MarvelModel.swift */,
+				B4CD950D280284D400240D8C /* TableViewCell.swift */,
+				B4CD950F280284EB00240D8C /* TableViewCell.xib */,
+				B4CD951128028FE600240D8C /* ex-UIImage.swift */,
 			);
 			path = "MarvelAPI-App";
 			sourceTree = "<group>";
@@ -165,6 +176,7 @@
 				B4CD950427FA769C00240D8C /* ReactiveMoya */,
 				B4CD950627FA769C00240D8C /* RxMoya */,
 				B4CD950927FA8E8A00240D8C /* CryptoSwift */,
+				B4CD95142802F18000240D8C /* AlamofireImage */,
 			);
 			productName = "MarvelAPI-App";
 			productReference = B4B784C527F7325C00D28ACF /* MarvelAPI-App.app */;
@@ -241,6 +253,7 @@
 			packageReferences = (
 				B4CD94FF27FA769C00240D8C /* XCRemoteSwiftPackageReference "Moya" */,
 				B4CD950827FA8E8A00240D8C /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				B4CD95132802F18000240D8C /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = B4B784C627F7325C00D28ACF /* Products */;
 			projectDirPath = "";
@@ -259,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B784D527F7325F00D28ACF /* LaunchScreen.storyboard in Resources */,
+				B4CD9510280284EB00240D8C /* TableViewCell.xib in Resources */,
 				B4B784D227F7325F00D28ACF /* Assets.xcassets in Resources */,
 				B4B784D027F7325C00D28ACF /* Main.storyboard in Resources */,
 			);
@@ -288,6 +302,8 @@
 				B4B784CD27F7325C00D28ACF /* ViewController.swift in Sources */,
 				B4B784C927F7325C00D28ACF /* AppDelegate.swift in Sources */,
 				B4CD94FD27FA6AC800240D8C /* Marvel.swift in Sources */,
+				B4CD951228028FE600240D8C /* ex-UIImage.swift in Sources */,
+				B4CD950E280284D400240D8C /* TableViewCell.swift in Sources */,
 				B4B784CB27F7325C00D28ACF /* SceneDelegate.swift in Sources */,
 				B4CD950C27FB15B400240D8C /* MarvelModel.swift in Sources */,
 			);
@@ -470,6 +486,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MarvelAPI-App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -497,6 +514,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MarvelAPI-App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -645,6 +663,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		B4CD95132802F18000240D8C /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -672,6 +698,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B4CD950827FA8E8A00240D8C /* XCRemoteSwiftPackageReference "CryptoSwift" */;
 			productName = CryptoSwift;
+		};
+		B4CD95142802F18000240D8C /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD95132802F18000240D8C /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
