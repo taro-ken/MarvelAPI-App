@@ -56,6 +56,18 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return response.count
   }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let url = response[indexPath.row].urls.map{$0._url}
+        print(url)
+//        let url = response[indexPath.row].urls.map{$0._url}.description
+//
+//        guard  let ggg = URL.init(string: url) else {
+//            return
+//        }
+//                     UIApplication.shared.canOpenURL(ggg)
+//        UIApplication.shared.open(ggg, options: [:], completionHandler: nil)
+    }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard
@@ -65,6 +77,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
     cell.configure(mavelModel: mavelModel)
     return cell
   }
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
